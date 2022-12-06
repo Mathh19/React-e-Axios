@@ -1,10 +1,12 @@
-function App() {
+import { Outlet } from 'react-router-dom';
+
+export function App() {
 
   return (
     <div className="App">
-     <h1>Hello World</h1>
+      <div className="container">
+        <Outlet />
+      </div>
     </div>
   )
 }
-
-export default App
